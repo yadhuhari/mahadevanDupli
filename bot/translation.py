@@ -8,7 +8,7 @@ class Translation(object):
 Just Add Me To Your Group And Channel And Connect Them And See My Pevers 🔥🔥😝
 
 For More Details Click Help Button Below..
-@im_goutham_josh
+@Jackey_07
 </i>"""    
     
     HELP_TEXT = """
@@ -41,18 +41,18 @@ For More Details Click Help Button Below..
             
             -> <code>Status</code> - Button Will Shows The Stats Of Your Channel
             
-@im_goutham_josh
+@Jackey_07
 """
     
-    ABOUT_TEXT = """<b>➥ Name</b> : <a href=https://t.me/im_kuttu2_bot>Kuttu Bot 2</a>
+    ABOUT_TEXT = """<b>➥ Name</b> : <a href=https://t.me/MYFILTER_ROBOT>𝑺𝒆𝒕𝒉𝒖𝒑𝒂𝒕𝒉𝒊⚡️</a>
     
-<b>➥ Creator</b> : <b><i><a href="https://t.me/wudixh13/4">Goutham SER</a></i></b>
+<b>➥ Creator</b> : <b><i><a href="https://t.me/JACKEY_07">Jackey TG</a></i></b>
 
 <b>➥ Language</b> : <code>Python3</code>
 
 <b>➥ Library</b> : <i><a href="https://docs.pyrogram.org">Pyrogram V2 </a></i>
 
-<b>➥ Source Code</b> : <b> SOURCE CODE IS PVT LTD </b>
+<b>➥ Source Code</b> : <b> Join @the_aecr and pm @jackey_07 </b>
 """
 
     STATUS_TEXT = """★ Total Files: {}
