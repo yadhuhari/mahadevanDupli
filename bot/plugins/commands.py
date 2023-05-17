@@ -17,7 +17,7 @@ async def start(bot, update):
                 await update.reply_text("You are Banned")
                 return
         except UserNotParticipant:
-            await msg.reply_text(
+            await update.reply_text(
                 text="u r not sub my channel",
                 reply_markup=InlineKeyboardMarkup( [[
                  InlineKeyboardButton("JOIN HERE", url=f"t.me/{force_channel}")
