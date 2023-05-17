@@ -1,8 +1,7 @@
 from pyrogram import filters, Client, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from pyrogram.errors import UserNotParticipant
 
-force_channel = "the_aecr"
+
 from bot import Translation, LOGGER # pylint: disable=import-error
 from bot.database import Database # pylint: disable=import-error
 
@@ -10,20 +9,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    if force_channel:
-        try:
-            user = await update.get_chat_member(force_channel, update.from_user.id)
-            if user.status == "kicked out":
-                await update.reply_text("You are Banned")
-                return
-        except UserNotParticipant:
-            await update.reply_text(
-                text="u r not sub my channel",
-                reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("JOIN HERE", url=f"t.me/{force_channel}")
-                 ]]
-                )
-            )
+   
     try:
         file_uid = update.command[1]
     except IndexError:
