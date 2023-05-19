@@ -215,7 +215,7 @@ async def auto_filter(bot, update):
                 caption=f"""ʜᴇʏ
                 ʜᴇʀᴇ ɪꜱ ᴡʜᴀᴛ ɪ ꜰᴏᴜɴᴅ ꜰᴏʀ ʏᴏᴜʀ ꜱᴇᴀʀᴄʜ : <code>{query}</code>
                 
-                @Pirate_Cinemas_Group"""
+                @Pirate_Cinemas_Group""",
                 reply_markup=reply_markup,
                 parse_mode=enums.ParseMode.HTML,
                 reply_to_message_id=update.id
