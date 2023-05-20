@@ -11,8 +11,8 @@ db = Database()
 force_channel = "the_aecr"
 
 PICS = [
+ "https://te.legra.ph/file/08a316baaf04d5df7d91e.jpg",
  "https://te.legra.ph/file/08a316baaf04d5df7d91e.jpg"
-
 ]
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
