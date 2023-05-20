@@ -18,10 +18,8 @@ ACTIVE_CHATS = {}
 db = Database()
 
 PICS = [
- "https://telegra.ph/file/fd2676c5859891d20a9b4.jpg",
- "https://telegra.ph/file/dd2b32c9330d239741a64.jpg",
- "https://telegra.ph/file/9c8684202600f671f5a67.jpg",
- "https://telegra.ph/file/958a33c7c16598eec03ce.jpg"
+ "https://te.legra.ph/file/08a316baaf04d5df7d91e.jpg"
+
 ]
 
 @Bot.on_message(filters.text & filters.group, group=0)
