@@ -8,13 +8,13 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-force_channel = "@the_aecr"
+force_channel = "the_aecr"
 
 PICS = [
- "https://telegra.ph/file/fd2676c5859891d20a9b4.jpg",
- "https://telegra.ph/file/dd2b32c9330d239741a64.jpg",
- "https://telegra.ph/file/9c8684202600f671f5a67.jpg",
- "https://telegra.ph/file/958a33c7c16598eec03ce.jpg"
+ "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
+ "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
+ "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
+ "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg"
 ]
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
@@ -56,7 +56,7 @@ async def start(bot, update):
                 parse_mode=enums.ParseMode.HTML,
                 reply_markup=InlineKeyboardMarkup(
                         [[
-                            InlineKeyboardButton('💕Movie Group❤', url="https://t.me/PirateCinemas_Group")
+                            InlineKeyboardButton('💕Movie Group❤', url="https://t.me/Pirate_Cinemas_Group")
                         ]]
                 ))
         except Exception as e:
@@ -65,9 +65,7 @@ async def start(bot, update):
         return
 #pmstart
     buttons = [[
-                    InlineKeyboardButton('Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ💕', url=f"http://t.me/Myfilter_Robot?startgroup=true")
-                ],[
-                    InlineKeyboardButton('Mᴏᴠɪᴇ ɢʀᴏᴜᴘ🎥', url='https://t.me/PirateCinemas_Group')
+                    InlineKeyboardButton('Mᴏᴠɪᴇ ɢʀᴏᴜᴘ🎥', url='https://t.me/Pirate_Cinemas_Group')
                 ],[
                     InlineKeyboardButton('Hᴇʟᴘ🔧', callback_data="help")
            ]]
