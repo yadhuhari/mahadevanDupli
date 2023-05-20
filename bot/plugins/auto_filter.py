@@ -18,8 +18,8 @@ ACTIVE_CHATS = {}
 db = Database()
 
 PICS = [
+ "https://te.legra.ph/file/08a316baaf04d5df7d91e.jpg",
  "https://te.legra.ph/file/08a316baaf04d5df7d91e.jpg"
-
 ]
 
 @Bot.on_message(filters.text & filters.group, group=0)
