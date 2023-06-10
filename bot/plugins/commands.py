@@ -64,11 +64,6 @@ async def start(bot, update):
                     ]]
                     )
                 )
-    await update.send_video(
-        video=random.choice(VID),
-        caption=f"""**Hey {update.from_user.mention}
-        
-Thanks for use me Dear 💋**""")
         except Exception as e:
             await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode=enums.ParseMode.HTML)
             LOGGER(__name__).error(e)
