@@ -83,3 +83,13 @@ async def start(bot, update):
         reply_markup=reply_markup,
         reply_to_message_id=update.id
     )
+    await update.reply_video(
+        video=random.choice(VID),
+        caption=f"""**Hey {message.from_user.mention},
+        
+Here is my kiss for my dear... 💋
+Go to Group for Movies...!!**"""
+    )
+     
+     
+     
