@@ -213,7 +213,7 @@ async def auto_filter(bot, update):
         try:
             await update.reply_photo(
                 photo=random.choice(PICS),
-                caption=f"Hᴇʏ {update.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <code>{query}</code>.,
+                caption=f"Hᴇʏ {update.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <code>{query}</code>.",
                 reply_markup=reply_markup,
                 reply_to_message_id=update.id
             )
