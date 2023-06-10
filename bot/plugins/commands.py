@@ -17,6 +17,10 @@ PICS = [
  "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg"
 ]
 
+VID = [
+ "https://telegra.ph/file/d5082ef18ad41aa35d074.mp4"
+]
+
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     if force_channel:
