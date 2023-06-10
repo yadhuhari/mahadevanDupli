@@ -46,28 +46,31 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
      #CUSTOM FILE CAPTION   
-        caption = f""" 📂 <em>File Name</em>: <code>Sethupathi | {file_name} </code> \n\n🖇 <em>File Size</em>: <code> {file_size} </code>"""
+        caption = f""" 📂 <em>File Name</em>: <code>Anjana | {file_name} </code> \n\n🖇 <em>File Size</em>: <code> {file_size} </code>"""
         
         try:
             await update.reply_cached_media(
                 file_id,
                 quote=True,
                 caption = caption,
-                parse_mode=enums.ParseMode.HTML,
-                reply_markup=InlineKeyboardMarkup(
-                        [[
-                            InlineKeyboardButton('💕Movie Group❤', url="https://t.me/Pirate_Cinemas_Group")
-                        ]]
-                ))
-        except Exception as e:
-            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode=enums.ParseMode.HTML)
-            LOGGER(__name__).error(e)
-        return
+                reply_markup=InlineKeyboardMarkup( [[
+                    InlineKeyboardButton("🔰 SUPPORT GROUP 🔰", url="t.me/crazy_cinemas_group"),
+                    ],[
+                    InlineKeyboardButton("💠 SUPPORT CHANNEL 💠", url="https://t.me/crazy_cinemas_official")
+                    ]]
+                    )
+                )
+    await update.send_video(
+        video=random.choice(VID),
+        caption="""**Hey {update.from_user.mention}
+        
+Thanks for use me Dear 💋**""")
+        
 #pmstart
     buttons = [[
-                    InlineKeyboardButton('Mᴏᴠɪᴇ ɢʀᴏᴜᴘ🎥', url='https://t.me/Pirate_Cinemas_Group')
+                    InlineKeyboardButton("🔰 SUPPORT GROUP 🔰", url="t.me/crazy_cinemas_group")
                 ],[
-                    InlineKeyboardButton('Hᴇʟᴘ🔧', callback_data="help")
+                    InlineKeyboardButton("💠 SUPPORT CHANNEL 💠", url="https://t.me/crazy_cinemas_official")
            ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -76,46 +79,5 @@ async def start(bot, update):
         photo=random.choice(PICS),
         caption=Translation.START_TEXT.format(update.from_user.first_name),
         reply_markup=reply_markup,
-        parse_mode=enums.ParseMode.HTML,
-        reply_to_message_id=update.id
-    )
-
-
-@Client.on_message(filters.command(["help"]) & filters.private, group=1)
-async def help(bot, update):
-    buttons = [[
-            InlineKeyboardButton('🏡ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('Aʙᴏᴜᴛ🖥', callback_data='about')
-        ],[
-            InlineKeyboardButton('🔐ᴄʟᴏsᴇ', callback_data='close')
-        ]]
-    
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await update.reply_photo(
-        photo=random.choice(PICS),
-        caption=Translation.HELP_TEXT,
-        reply_markup=reply_markup,
-        parse_mode=enums.ParseMode.HTML,
-        reply_to_message_id=update.id
-    )
-
-
-@Client.on_message(filters.command(["about"]) & filters.private, group=1)
-async def about(bot, update):
-    
-    buttons = [[
-            InlineKeyboardButton('Oᴡɴᴇʀ👤', url='https://t.me/Jackey_07')
-        ], [
-            InlineKeyboardButton('🏡ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('ʙᴀᴄᴋ👈', callback_data='help')
-        ]]
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await update.reply_photo(
-        photo=random.choice(PICS),
-        caption=Translation.ABOUT_TEXT,
-        reply_markup=reply_markup,
-        parse_mode=enums.ParseMode.HTML,
         reply_to_message_id=update.id
     )
