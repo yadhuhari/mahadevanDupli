@@ -65,7 +65,10 @@ async def start(bot, update):
         caption=f"""**Hey {update.from_user.mention}
         
 Thanks for use me Dear 💋**""")
-        
+        except Exception as e:
+            await update.reply_text(f"<b>Error:</b>\n<code>{e}</code>", True, parse_mode=enums.ParseMode.HTML)
+            LOGGER(__name__).error(e)
+        return
 #pmstart
     buttons = [[
                     InlineKeyboardButton("🔰 SUPPORT GROUP 🔰", url="t.me/crazy_cinemas_group")
