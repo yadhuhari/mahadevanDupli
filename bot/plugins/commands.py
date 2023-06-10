@@ -8,7 +8,7 @@ from bot.database import Database # pylint: disable=import-error
 
 db = Database()
 
-force_channel = "the_aecr"
+force_channel = "crazy_cinemas_official"
 
 PICS = [
  "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
