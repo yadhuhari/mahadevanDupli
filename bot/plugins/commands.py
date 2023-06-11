@@ -50,7 +50,11 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
      #CUSTOM FILE CAPTION   
-        caption=f""" 📂 <em>File Name</em>: <code>{file_name} </code>
+        caption=f"""Hey {update.from_user.mention} 😍
+        
+<code>{file_name} </code>
+
+⚠ ഈ ഫയൽ ശരിയായി പ്രവർത്തിക്കാൻ ഞങ്ങളുടെ ചാനലിലും ഗ്രൂപ്പിലും ചേരുക..!!
 
 ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_official
 ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_group"""
