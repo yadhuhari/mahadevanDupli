@@ -50,10 +50,10 @@ async def start(bot, update):
         if (file_id or file_type) == None:
             return
      #CUSTOM FILE CAPTION   
-        caption = f""" 📂 <em>File Name</em>: <code>{file_name} </code>
+        caption=f""" 📂 <em>File Name</em>: <code>{file_name} </code>
 
-♻️ 𝙅𝙊𝙄𝙉 :- [SUPPORT CHANNEL](t.me/crazy_cinemas_official)
-♻️ 𝙅𝙊𝙄𝙉 :- [SUPPORT GROUP](t.me/crazy_cinemas_group)"""
+♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_official
+♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_group"""
         try:
             await update.reply_cached_media(
                 file_id,
