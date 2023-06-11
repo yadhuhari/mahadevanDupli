@@ -18,10 +18,8 @@ ACTIVE_CHATS = {}
 db = Database()
 
 PICS = [
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg"
+ "https://telegra.ph/file/0a0a44828a9854bab75a7.jpg",
+ "https://telegra.ph/file/00b81ceb39ff1e1128c34.jpg"
 ]
 
 @Bot.on_message(filters.text & filters.group, group=0)
@@ -213,7 +211,7 @@ async def auto_filter(bot, update):
         try:
             await update.reply_photo(
                 photo=random.choice(PICS),
-                caption=f"Hᴇʏ {update.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <code>{query}</code>.",
+                caption=f"Hᴇʏ {update.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <code>{query}</code>./n ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_official/n ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_group",
                 reply_markup=reply_markup,
                 reply_to_message_id=update.id
             )
