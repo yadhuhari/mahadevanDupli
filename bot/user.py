@@ -4,8 +4,7 @@
 
 from pyrogram import Client, __version__
 
-from . import API_HASH, API_ID, LOGGER, \
-    USER_SESSION
+from . import API_HASH, API_ID, LOGGER
 
 
 class User(Client):
@@ -14,7 +13,6 @@ class User(Client):
             "userbot",
             api_hash=API_HASH,
             api_id=API_ID,
-            session_string=USER_SESSION,
             workers=20
         )
         self.LOGGER = LOGGER
