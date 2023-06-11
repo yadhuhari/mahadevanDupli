@@ -85,10 +85,12 @@ async def start(bot, update):
     )
     await update.reply_video(
         video=random.choice(VID),
-        caption=f"""**Hey {message.from_user.mention},
+        caption=f"""**Hey {update.from_user.mention},
         
 Here is my kiss for my dear... 💋
-Go to Group for Movies...!!**"""
+Go to Group for Movies...!!
+
+@crazy_cinemas_official**"""
     )
      
      
