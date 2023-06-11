@@ -11,10 +11,8 @@ db = Database()
 force_channel = "crazy_cinemas_official"
 
 PICS = [
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg",
- "https://telegra.ph/file/d944277dd394b3ea57dbc.jpg"
+ "https://telegra.ph/file/0a0a44828a9854bab75a7.jpg",
+ "https://telegra.ph/file/00b81ceb39ff1e1128c34.jpg"
 ]
 
 VID = [
