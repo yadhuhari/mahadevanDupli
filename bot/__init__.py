@@ -15,8 +15,6 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 DATABASE_URI = os.environ.get("DATABASE_URI")
 
-USER_SESSION = os.environ.get("USER_SESSION")
-
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL")
 
 VERIFY = {}
