@@ -88,9 +88,7 @@ async def start(bot, update):
                     InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝖿𝗈𝗋 𝖬𝗈𝗏𝗂𝖾𝗌 🌀", url="https://t.me/CCGroupOfficial")
                     ]]
                     )
-                ),
-        reply_to_message_id=update.id
-    )
+   )
      
      
      
