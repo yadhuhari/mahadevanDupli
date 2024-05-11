@@ -11,8 +11,7 @@ db = Database()
 force_channel = "crazy_cinemas_official"
 
 PICS = [
- "https://telegra.ph/file/0a0a44828a9854bab75a7.jpg",
- "https://telegra.ph/file/00b81ceb39ff1e1128c34.jpg"
+ "https://telegra.ph/file/f75305e1b49490b793f28.jpg"
 ]
 
 VID = [
@@ -28,10 +27,11 @@ async def start(bot, update):
                 await update.reply_text("You Are Banned")
                 return
         except UserNotParticipant :
-            await update.reply_text(
-                text="🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭.\n\nനിങ്ങൾക്ക് മൂവീസ് വേണോ? എങ്കിൽ തായെ കാണുന്ന ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക.😂\nഎന്നിട്ട് ഗ്രൂപ്പിൽ പോയി വീണ്ടും മൂവിയിൽ ക്ലിക് ചെയ്ത് start കൊടുത്തു നോക്കൂ..!😁",
+            await update.reply_photo(
+                photo=random.choice(PICS),
+                caption="🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭.\n\nനിങ്ങൾക്ക് മൂവീസ് വേണോ? എങ്കിൽ തായെ കാണുന്ന ഞങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യുക.😂\nഎന്നിട്ട് ഗ്രൂപ്പിൽ പോയി വീണ്ടും മൂവിയിൽ ക്ലിക് ചെയ്ത് start കൊടുത്തു നോക്കൂ..!😁",
                 reply_markup=InlineKeyboardMarkup( [[
-                 InlineKeyboardButton("🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭", url=f"t.me/{force_channel}")
+                 InlineKeyboardButton("🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭", url=random.choice(force_channel))
                  ]]
                  )
             )
@@ -52,19 +52,16 @@ async def start(bot, update):
         
 <code>{file_name} </code>
 
-⚠ ഈ ഫയൽ ശരിയായി പ്രവർത്തിക്കാൻ ഞങ്ങളുടെ ചാനലിലും ഗ്രൂപ്പിലും ചേരുക..!!
-
-♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_official
-♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_group"""
+♻️ 𝙅𝙊𝙄𝙉 :- @CC_LinkzzTG"""
         try:
             await update.reply_cached_media(
                 file_id,
                 quote=True,
                 caption = caption,
                 reply_markup=InlineKeyboardMarkup( [[
-                    InlineKeyboardButton("🔰 SUPPORT GROUP 🔰", url="t.me/crazy_cinemas_group"),
+                    InlineKeyboardButton("👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="t.me/MR_HKZ_TG"),
                     ],[
-                    InlineKeyboardButton("💠 SUPPORT CHANNEL 💠", url="https://t.me/crazy_cinemas_official")
+                    InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝖿𝗈𝗋 𝖬𝗈𝗏𝗂𝖾𝗌 🌀", url="https://t.me/CCGroupOfficial")
                     ]]
                     )
                 )
@@ -74,9 +71,9 @@ async def start(bot, update):
         return
 #pmstart
     buttons = [[
-                    InlineKeyboardButton("🔰 SUPPORT GROUP 🔰", url="t.me/crazy_cinemas_group")
+                    InlineKeyboardButton("👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="t.me/MR_HKZ_TG")
                 ],[
-                    InlineKeyboardButton("💠 SUPPORT CHANNEL 💠", url="https://t.me/crazy_cinemas_official")
+                    InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝖿𝗈𝗋 𝖬𝗈𝗏𝗂𝖾𝗌 🌀", url="https://t.me/CCGroupOfficial")
            ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -84,17 +81,15 @@ async def start(bot, update):
     await update.reply_photo(
         photo=random.choice(PICS),
         caption=Translation.START_TEXT.format(update.from_user.first_name),
-        reply_markup=reply_markup,
+        reply_markup=InlineKeyboardMarkup( [[
+                    InlineKeyboardButton("𝖠𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 🎗", url="http://t.me/CCResmiBot?startgroup=true"),
+                    ],[
+                    InlineKeyboardButton("👨‍💻 𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="t.me/MR_HKZ_TG"),
+                    InlineKeyboardButton("𝖩𝗈𝗂𝗇 𝖿𝗈𝗋 𝖬𝗈𝗏𝗂𝖾𝗌 🌀", url="https://t.me/CCGroupOfficial")
+                    ]]
+                    )
+                ),
         reply_to_message_id=update.id
-    )
-    await update.reply_video(
-        video=random.choice(VID),
-        caption=f"""Hey {update.from_user.mention},
-        
-Here is my kiss for my dear... 💋
-Go to Group for Movies...!!
-
-@crazy_cinemas_official"""
     )
      
      
