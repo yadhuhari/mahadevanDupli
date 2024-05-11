@@ -2,16 +2,9 @@
 
 class Translation(object):
     
-    START_TEXT = """<b>Hello {}!!</b>
-<i>I Am Anjana You can Call Me as a Auto Filter V3 Bot...😉
+    START_TEXT = """<b>Hey 👋 {}!!</b>
+<i>𝖬𝗒 𝖭𝖺𝗆𝖾 𝗂𝗌 𝖱𝖾𝗌𝗆𝗂 𝖱 𝖭𝖺𝗂𝗋 🦋, 𝖨 𝖺𝗆 𝖺𝗇 𝖠𝖽𝗏𝖺𝗇𝖼𝖾𝖽 𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗈𝗍 𝗐𝗈𝗋𝗄𝗂𝗇𝗀 𝖿𝗈𝗋 𝖢𝗂𝗇𝖾𝗆𝖺 𝖢𝖺𝖿𝖾 🦋. 𝖸𝗈𝗎 𝖼𝖺𝗇 𝖺𝗅𝗌𝗈 𝗎𝗌𝖾 𝗆𝖾, 𝖩𝗎𝗌𝗍 𝖺𝖽𝖽 𝗆𝖾 𝗍𝗈 𝗒𝗈𝗎𝗋 𝗀𝗋𝗈𝗎𝗉 𝖺𝗇𝖽 𝖾𝗇𝗃𝗈𝗒 😍</i>"""
 
-Exclusively I am Made For Team Crazy Cinemas...!!
-
-🔷SUPPORT CHANNEL : @crazy_cinemas_official
-
-💠SUPPORT GROUP   : @crazy_cinemas_group
-</i>"""
-
-    STATUS_TEXT = """★ Total Files: {}
-★ Using Storage: {} MB
-★ Free Storage: {} MB"""
+    STATUS_TEXT = """★ 𝖳𝗈𝗍𝖺𝗅 𝖥𝗂𝗅𝖾𝗌 : {}
+★ 𝖴𝗌𝗂𝗇𝗀 𝖲𝗍𝗈𝗋𝖺𝗀𝖾 : {} 𝖬𝖡
+★ 𝖥𝗋𝖾𝖾 𝖲𝗍𝗈𝗋𝖺𝗀𝖾 : {} 𝖬𝖡"""
