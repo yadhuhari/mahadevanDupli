@@ -18,8 +18,7 @@ ACTIVE_CHATS = {}
 db = Database()
 
 PICS = [
- "https://telegra.ph/file/0a0a44828a9854bab75a7.jpg",
- "https://telegra.ph/file/00b81ceb39ff1e1128c34.jpg"
+ "https://telegra.ph/file/f75305e1b49490b793f28.jpg"
 ]
 
 @Bot.on_message(filters.text & filters.group, group=0)
@@ -155,13 +154,13 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("Next ⏩", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton("𝖭𝖤𝖷𝖳 ⏩", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🔰 Page 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
+            InlineKeyboardButton(f"🔰 𝖯𝖺𝗀𝖾𝗌 1/{len_result if len_result < max_pages else max_pages} 🔰", callback_data="ignore")
         ])
         
         
@@ -211,7 +210,7 @@ async def auto_filter(bot, update):
         try:
             await update.reply_photo(
                 photo=random.choice(PICS),
-                caption=f"Hᴇʏ {update.from_user.mention}, Hᴇʀᴇ ɪs Wʜᴀᴛ I Fᴏᴜɴᴅ Iɴ Mʏ Dᴀᴛᴀʙᴀsᴇ Fᴏʀ Yᴏᴜʀ Qᴜᴇʀʏ <code>{query}</code>./n ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_official/n ♻️ 𝙅𝙊𝙄𝙉 :- @crazy_cinemas_group",
+                caption=f"Hᴇʏ {update.from_user.mention}, 𝖧𝖾𝗋𝖾 𝗂𝗌 𝗐𝗁𝖺𝗍 𝖨 𝖿𝗈𝗎𝗇𝖽 𝖿𝗈𝗋 𝗒𝗈𝗎𝗋 𝗊𝗎𝖾𝗋𝗒 😍 <code>{query}</code>./n 🎯 𝖴𝗉𝗅𝗈𝖺𝖽𝖾𝖽 : [𝖱𝖾𝗌𝗆𝗂 𝖱 𝖭𝖺𝗂𝗋 🦋](t.me/CCResmiBot)",
                 reply_markup=reply_markup,
                 reply_to_message_id=update.id
             )
